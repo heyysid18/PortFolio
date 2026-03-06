@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siddhant Jain | Senior Backend Engineer</title>
     <meta name="description"
-        content="Portfolio of Siddhant Jain, a Senior Backend Engineer specializing in scalable architecture and high-performance applications.">
+        content="Portfolio of Siddhant Jain, a Backend Engineer specializing in scalable architecture and high-performance applications.">
     <!-- Open Graph / SEO Meta Tags -->
     <meta property="og:title" content="Siddhant Jain | Senior Backend Engineer">
     <meta property="og:description"
@@ -68,11 +68,22 @@
         <section id="hero" class="hero section-padding">
             <!-- Subtle background gradient glow -->
             <div class="glow-bg"></div>
+
+            <!-- Phase 5: Hero Interactive Background Layer -->
+            <canvas id="hero-particles"></canvas>
+            <div class="hero-glow"></div>
+
+            <div class="floating-tech-icon" style="top: 20%; left: 15%; --float-delay: 0s;">&lt;/&gt;</div>
+            <div class="floating-tech-icon" style="top: 70%; left: 10%; --float-delay: 1s;">{ }</div>
+            <div class="floating-tech-icon" style="top: 30%; right: 15%; --float-delay: 2s;">#</div>
+            <div class="floating-tech-icon" style="top: 65%; right: 20%; --float-delay: 1.5s;">()</div>
+            <div class="floating-tech-icon" style="top: 85%; left: 50%; --float-delay: 0.5s;">&lt; &gt;</div>
+
             <div class="container flex-center">
                 <div class="hero-content text-center">
-                    <h1 class="hero-title fade-in">Siddhant Jain</h1>
+                    <h1 class="hero-title fade-in shimmer-text">Siddhant Jain</h1>
                     <h2 class="hero-title-secondary fade-in" style="--delay: 1">Full Stack Developer <span
-                            class="accent">|</span> MERN <span class="accent">|</span> Backend-Focused Engineer</h2>
+                            class="accent"></span><span class="accent">|</span> Backend-Focused Engineer</h2>
                     <p class="hero-tagline fade-in" style="--delay: 2">
                         "Building scalable systems and clean digital experiences."
                     </p>
@@ -87,7 +98,7 @@
                             </svg>
                             Download Resume
                         </a>
-                        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub Profile"
+                        <a href="https://github.com/heyysid18" target="_blank" aria-label="GitHub Profile"
                             class="btn-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -98,8 +109,8 @@
                                 </path>
                             </svg>
                         </a>
-                        <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn Profile"
-                            class="btn-icon">
+                        <a href="https://www.linkedin.com/in/siddhant-jain-59a15b228/" target="_blank"
+                            aria-label="LinkedIn Profile" class="btn-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="feather feather-linkedin">
@@ -127,16 +138,15 @@
                 <h2 class="section-heading fade-in">About Me</h2>
                 <div class="about-grid">
                     <div class="about-text">
-                        <p class="fade-in">I am a Full Stack Developer with a deep-rooted passion for building scalable,
-                            high-performance web applications from the ground up.</p>
-                        <p class="fade-in" style="--delay: 1">My expertise lies in strong backend architecture, where I
-                            specialize in designing resilient, distributed systems and clean, intuitive REST APIs.</p>
-                        <p class="fade-in" style="--delay: 2">I have extensive experience implementing secure JWT
-                            authentication flows, robust Role-Based Access Control (RBAC) systems, and complex data
-                            models.</p>
-                        <p class="fade-in" style="--delay: 3">Every line of code I write is performance-focused,
-                            ensuring that the applications I deliver are not only functional but highly optimized for
-                            scale and speed.</p>
+                        <p class="fade-in">Hi, I'm Siddhant Jain, a B.Tech student at LNMIIT, Jaipur, passionate about
+                            building scalable, high-performance web applications.</p>
+                        <p class="fade-in" style="--delay: 1">I've developed production-ready systems like AIMERS—an
+                            educational platform for 10,000+ users where I optimized performance by 40%—and LivePolling,
+                            a real-time WebSocket app.</p>
+                        <p class="fade-in" style="--delay: 2">Having solved 500+ DSA problems, I approach software
+                            engineering with a strong focus on efficient algorithms and clean system architecture.</p>
+                        <p class="fade-in" style="--delay: 3">Beyond code, I'm a core photography club member, always
+                            bringing a creative eye to solving meaningful engineering problems.</p>
                     </div>
                     <div class="about-image-container fade-in">
                         <div class="about-image-wrapper">
@@ -294,30 +304,35 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Featured Projects Section -->
         <section id="projects" class="projects section-padding">
             <div class="container">
                 <h2 class="section-heading title-center fade-in">Featured Projects</h2>
                 <p class="section-subtitle text-center fade-in"
-                    style="--delay: 1; margin-bottom: 3rem; color: var(--text-secondary);">Showcasing architecture,
-                    scalability, and impact.</p>
-                <div class="projects-grid">
+                    style="--delay: 1; margin-bottom: 3rem; color: var(--text-secondary);">
+                    A selection of projects showcasing full-stack development, scalable APIs, and modern web
+                    architecture.
+                </p>
 
-                    <!-- Project 1 -->
-                    <div class="project-card fade-in" style="--delay: 1">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <div class="project-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path
-                                            d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                                        </path>
-                                    </svg>
-                                </div>
+                <div class="featured-projects-grid">
+                    <!-- Project 1: Pharmacy EMR -->
+                    <div class="featured-project-card fade-in" style="--delay: 1">
+                        <div class="project-bg"
+                            style="background-image: url('assets/project_emr_bg_1772810050664.png');"></div>
+                        <div class="project-overlay">
+                            <div class="project-content-layer">
+                                <h3 class="project-title">Pharmacy EMR System</h3>
+                                <p class="project-description">End-to-end management platform capturing 10k+ daily
+                                    transactions. Reduced processing time by 40% with optimized queueing.</p>
+                                <ul class="project-tech-list">
+                                    <li>Node.js</li>
+                                    <li>PostgreSQL</li>
+                                    <li>React</li>
+                                    <li>Redis</li>
+                                </ul>
                                 <div class="project-links">
-                                    <a href="#" class="project-link-btn" aria-label="GitHub Repository">
+                                    <a href="https://github.com/heyysid18" class="project-link-btn"
+                                        aria-label="GitHub Repository">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round">
@@ -327,7 +342,8 @@
                                         </svg>
                                         Code
                                     </a>
-                                    <a href="#" class="project-link-btn" aria-label="Live Demo">
+                                    <a href="https://github.com/heyysid18" class="project-link-btn"
+                                        aria-label="Live Demo">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round">
@@ -339,34 +355,27 @@
                                     </a>
                                 </div>
                             </div>
-                            <h3 class="project-title">Pharmacy EMR System</h3>
-                            <p class="project-description">End-to-end pharmacy management platform capturing 10k+ daily
-                                transactions. Reduced prescription processing time by 40% using optimized query batching
-                                and Redis caching.</p>
-                            <ul class="project-tech-list">
-                                <li>Node.js</li>
-                                <li>PostgreSQL</li>
-                                <li>React</li>
-                                <li>Redis</li>
-                            </ul>
                         </div>
                     </div>
 
-                    <!-- Project 2 -->
-                    <div class="project-card fade-in" style="--delay: 2">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <div class="project-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path
-                                            d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                                        </path>
-                                    </svg>
-                                </div>
+                    <!-- Project 2: Live Polling Engine -->
+                    <div class="featured-project-card fade-in" style="--delay: 2">
+                        <div class="project-bg"
+                            style="background-image: url('assets/project_polling_bg_1772810068088.png');"></div>
+                        <div class="project-overlay">
+                            <div class="project-content-layer">
+                                <h3 class="project-title">Live Polling Engine</h3>
+                                <p class="project-description">Real-time classroom polling app leveraging WebSockets.
+                                    Engineered to handle 5k+ concurrent connections without dropping packets.</p>
+                                <ul class="project-tech-list">
+                                    <li>Express.js</li>
+                                    <li>Socket.io</li>
+                                    <li>MongoDB</li>
+                                    <li>Chart.js</li>
+                                </ul>
                                 <div class="project-links">
-                                    <a href="#" class="project-link-btn" aria-label="GitHub Repository">
+                                    <a href="https://github.com/heyysid18" class="project-link-btn"
+                                        aria-label="GitHub Repository">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round">
@@ -376,7 +385,8 @@
                                         </svg>
                                         Code
                                     </a>
-                                    <a href="#" class="project-link-btn" aria-label="Live Demo">
+                                    <a href="https://github.com/heyysid18" class="project-link-btn"
+                                        aria-label="Live Demo">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round">
@@ -388,34 +398,28 @@
                                     </a>
                                 </div>
                             </div>
-                            <h3 class="project-title">Live Polling Engine</h3>
-                            <p class="project-description">Real-time classroom polling app leveraging WebSockets for
-                                sub-100ms response times. Engineered to handle 5k+ concurrent connections without
-                                dropping active packets.</p>
-                            <ul class="project-tech-list">
-                                <li>Express.js</li>
-                                <li>Socket.io</li>
-                                <li>MongoDB</li>
-                                <li>Chart.js</li>
-                            </ul>
                         </div>
                     </div>
 
-                    <!-- Project 3 -->
-                    <div class="project-card fade-in" style="--delay: 3">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <div class="project-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path
-                                            d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                                        </path>
-                                    </svg>
-                                </div>
+                    <!-- Project 3: Zero-Trust Auth -->
+                    <div class="featured-project-card fade-in" style="--delay: 3">
+                        <div class="project-bg"
+                            style="background-image: url('assets/project_auth_bg_1772810084702.png');"></div>
+                        <div class="project-overlay">
+                            <div class="project-content-layer">
+                                <h3 class="project-title">Zero-Trust Auth Gateway</h3>
+                                <p class="project-description">A centralized identity provider integrating JWT
+                                    strategies and strict RBAC architectures, successfully defending against CSRF
+                                    payloads.</p>
+                                <ul class="project-tech-list">
+                                    <li>Golang</li>
+                                    <li>JWT</li>
+                                    <li>Docker</li>
+                                    <li>OAuth2</li>
+                                </ul>
                                 <div class="project-links">
-                                    <a href="#" class="project-link-btn" aria-label="GitHub Repository">
+                                    <a href="https://github.com/heyysid18" class="project-link-btn"
+                                        aria-label="GitHub Repository">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round">
@@ -425,21 +429,77 @@
                                         </svg>
                                         Code
                                     </a>
+                                    <a href="https://github.com/heyysid18" class="project-link-btn"
+                                        aria-label="Live Demo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        Live
+                                    </a>
                                 </div>
                             </div>
-                            <h3 class="project-title">Zero-Trust Auth Gateway</h3>
-                            <p class="project-description">A centralized identity provider integrating JWT access
-                                strategies and strict RBAC architectures, successfully defending against varied CSRF and
-                                XSS scenarios.</p>
-                            <ul class="project-tech-list">
-                                <li>Golang</li>
-                                <li>JWT</li>
-                                <li>Docker</li>
-                                <li>OAuth2</li>
-                            </ul>
                         </div>
                     </div>
 
+                    <!-- Project 4: Analytics E-Commerce -->
+                    <div class="featured-project-card fade-in" style="--delay: 4">
+                        <div class="project-bg"
+                            style="background-image: url('assets/project_ecommerce_bg_1772810104012.png');"></div>
+                        <div class="project-overlay">
+                            <div class="project-content-layer">
+                                <h3 class="project-title">Veritas Analytics Engine</h3>
+                                <p class="project-description">High-performance custom metrics dashboard for E-Commerce
+                                    platforms. Built to quickly process and visualize millions of sales nodes.</p>
+                                <ul class="project-tech-list">
+                                    <li>Vue.js</li>
+                                    <li>Python API</li>
+                                    <li>D3.js</li>
+                                    <li>AWS</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/heyysid18" class="project-link-btn"
+                                        aria-label="GitHub Repository">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                            </path>
+                                        </svg>
+                                        Code
+                                    </a>
+                                    <a href="https://github.com/heyysid18" class="project-link-btn"
+                                        aria-label="Live Demo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        Live
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View More Projects Button -->
+                <div class="view-more-container fade-in" style="--delay: 5">
+                    <a href="https://github.com/heyysid18" target="_blank" rel="noopener noreferrer"
+                        class="btn-gradient">
+                        View More Projects
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
@@ -472,13 +532,13 @@
                                 </div>
                                 <div class="contact-text">
                                     <span>Email</span>
-                                    <a href="mailto:hello@siddhant.com">hello@siddhant.com</a>
+                                    <a href="mailto:jsiddhant380@gmail.com">jsiddhant380@gmail.com</a>
                                 </div>
                             </div>
 
                             <div class="contact-item">
                                 <div class="contact-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
                                         <path
@@ -488,7 +548,7 @@
                                 </div>
                                 <div class="contact-text">
                                     <span>Phone</span>
-                                    <a href="tel:+910000000000">+91 00000 00000</a>
+                                    <a href="tel:+918770239160">+91 8770239160</a>
                                 </div>
                             </div>
 
@@ -509,7 +569,8 @@
                         </div>
 
                         <div class="contact-socials">
-                            <a href="#" class="social-icon" aria-label="GitHub">
+                            <a href="https://github.com/heyysid18" class="social-icon" aria-label="GitHub"
+                                target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round">
@@ -518,7 +579,8 @@
                                     </path>
                                 </svg>
                             </a>
-                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <a href="https://www.linkedin.com/in/siddhant-jain-59a15b228/" class="social-icon"
+                                aria-label="LinkedIn" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round">
