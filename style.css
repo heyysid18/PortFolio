@@ -742,28 +742,20 @@ ul {
     left: 15px;
 }
 
-.profile-placeholder {
+.profile-image {
     width: 100%;
     aspect-ratio: 1;
-    background: var(--gradient-accent);
+    object-fit: cover;
     border-radius: var(--border-radius-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     position: relative;
     z-index: 1;
-    filter: grayscale(80%) contrast(1.2);
+    filter: grayscale(20%) contrast(1.1);
     transition: var(--transition-standard);
 }
 
-.profile-placeholder:hover {
+.profile-image:hover {
     filter: none;
-}
-
-.profile-placeholder span {
-    font-size: 5rem;
-    font-weight: 800;
-    color: rgba(255, 255, 255, 0.8);
 }
 
 /* =========== Skills Section =========== */
